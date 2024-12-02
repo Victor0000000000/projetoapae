@@ -18,7 +18,7 @@
 		
 					<div class="card">
 						<div>
-						<img class="logo" src="img/logopng.png">
+						<img class="logo" src="img/apaelogo.png">
 						</div>
 						<br>
 							<p class="titulos">Digite seu nome</p>
