@@ -7,7 +7,7 @@ require "conexao.php";
 	
 	
 
-		$sql = "INSERT INTO dados (nome, senha) values ('$nome', '$senha')"; 
+		$sql = "INSERT INTO usuarios (nome, senha) values ('$nome', '$senha')"; 
 
 mysqli_query($conn, $sql); // envia para o banco de dados
 ?>"<script type='text/javascript'>alert('Usuário cadastrado!');</script>";
