@@ -30,6 +30,8 @@ if (!isset($_SESSION['cod'])) {
 <html lang="pt-br">
 
 <head>
+<meta name="authors"  content="Victor Augusto Graeff V.  Gustavo Maximiano F. Robson Cechinel J. Marek Marius N. Weslei Machado S.">
+<meta name="ttitulo" content="Avaliação Online">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,7 +95,7 @@ if (!isset($_SESSION['cod'])) {
     
 
     <div class="social-midia">
-      <a href="https://www.instagram.com/curtaifc/" target="_blank"><img class="social" src="img/instagram.png" alt="Ocorreu um erro no carregamento da imagem"></a>
+      <a href="https://www.instagram.com/apae.criciuma?igsh=MW81bjZhNjE0OGZ4cw==" target="_blank"><img class="social" src="img/instagram.png" alt="Ocorreu um erro no carregamento da imagem"></a>
       
     </div>
   </footer>
