@@ -23,26 +23,30 @@ body {
 	justify-content: center;
 	background-color: var(--c-bg-primary);
 	color: var(--c-text-primary);
+	margin: 0;
+	padding: 0;
 }
 
 button {
 	font: inherit;
 	cursor: pointer;
-	&:focus {
-		outline: 0;
-	}
 }
 
+button:focus {
+	outline: 0;
+}
 
+/* Estilo do Calendário */
 .datepicker {
 	width: 95%;
 	max-width: 350px;
 	background-color: var(--c-bg-tertiary);
 	border-radius: 10px;
-	box-shadow: 0 0 2px 0 rgba(#000, .2), 0 5px 10px 0 rgba(#000, .1);
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 	padding: 1rem;
 }
 
+/* Topo do Calendário */
 .datepicker-top {
 	margin-bottom: 1rem;
 }
@@ -64,6 +68,7 @@ button {
 	font-weight: 600;
 }
 
+/* Navegação do Mês */
 .month-selector {
 	display: flex;
 	justify-content: space-between;
@@ -75,17 +80,18 @@ button {
 	align-items: center;
 	justify-content: center;
 	border: 0;
-	background-color:#FFF;
+	background-color: #FFF;
 	border-radius: 12px;
 	width: 2.5rem;
 	height: 2.5rem;
-	box-shadow: 0 0 2px 0 rgba(#000,.25), 0 0 10px 0 rgba(#000, .15);
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25), 0 0 10px 0 rgba(0, 0, 0, 0.15);
 }
 
 .month-name {
 	font-weight: 600;
 }
 
+/* Corpo do Calendário */
 .datepicker-calendar {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
@@ -103,6 +109,7 @@ button {
 	justify-self: center;
 }
 
+/* Datas */
 .date {
 	border: 0;
 	padding: 0;
@@ -116,22 +123,25 @@ button {
 	border: 2px solid transparent;
 	background-color: transparent;
 	cursor: pointer;
-	&:focus {
-		outline: 0;
-		color: var(--c-theme-primary);
-		border: 2px solid var(--c-theme-primary-accent);	
-	}	
+}
+
+.date:focus {
+	outline: 0;
+	color: var(--c-theme-primary);
+	border: 2px solid var(--c-theme-primary-accent);	
 }
 
 .faded {
 	color: var(--c-text-secondary);
+	cursor: not-allowed;
 }
 
 .current-day {
 	color: #FFF;
 	border-color: var(--c-theme-primary);
 	background-color: var(--c-theme-primary);
-	&:focus {
-		background-color: var(--c-theme-primary-accent);
-	}
+}
+
+.current-day:focus {
+	background-color: var(--c-theme-primary-accent);
 }

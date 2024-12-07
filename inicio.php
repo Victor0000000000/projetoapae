@@ -55,7 +55,7 @@ if (!isset($_SESSION['cod'])) {
 
     
        
-       <li><a class="link-menu" href="Galeria.php">Calendario</a></li>
+       <li><a class="link-menu" href="calendario.html">Calendario</a></li>
         <li><a class="link-menu" href="premiacao.php">Cadastrar documentos</a></li>
      
       
