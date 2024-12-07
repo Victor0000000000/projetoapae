@@ -1,31 +1,3 @@
-<?php
-session_start();
-$curtas= 0;
-if ($_SESSION['adm'] == 0) {
-    $curtas = "invisivel";
-} 
-
-if ($_SESSION['adm'] == 1) {
-  $curtas = "";
-}
-$registro= 0;
-if ($_SESSION['adm'] == 0) {
-  $registro="invisivel";
-} 
-if ($_SESSION['adm'] == 1) {
-  $registro="";
-}
-
-
-//include ("valida_session_perfil.php");
-include ("conexao.php");
-
-if (!isset($_SESSION['cod'])) {
-  session_destroy();
-  header('Location:index.php');
-} 
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -37,7 +9,7 @@ if (!isset($_SESSION['cod'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/36b801b814.js" crossorigin="anonymous"></script>
   <title>Curta IFC</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -49,14 +21,12 @@ if (!isset($_SESSION['cod'])) {
       </button>
       <ul id="menu" role="menu">
 
-        <li>
-          <button onclick="myFunction()" class="bot"><i class="fas fa-sun"></i></button>
-        </li>
+        
 
     
        
        <li><a class="link-menu" href="calendario.html">Calendario</a></li>
-        <li><a class="link-menu" href="premiacao.php">Cadastrar documentos</a></li>
+        <li><a class="link-menu" href="doc.php">Cadastrar documentos</a></li>
      
       
         <li><a class="link-menu" href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
@@ -66,10 +36,8 @@ if (!isset($_SESSION['cod'])) {
 
 <div data-slide="slide" class="slide">
     <div class="slide-items">
-      <img class="img-slide" src="img/img1.jpeg" alt="Img 1">
-      <img class="img-slide" src="img/img2.jpeg" alt="Img 2">
-      <img class="img-slide" src="img/img3.jpeg" alt="Img 3">
-      <img class="img-slide" src="img/img4.jpeg" alt="Img 4">
+      <img class="img-slide" src="img/apaecriciuma.png" alt="Img 1">
+    
     </div>
     <nav class="slide-nav">
       <div class="slide-thumb"></div>

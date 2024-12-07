@@ -67,7 +67,7 @@ function selectDay(day) {
             selectedDay.style.color = '';
         }
 
-        // Marca o dia selecionado com a cor vermelha
+        
         day.style.backgroundColor = 'red';
         day.style.color = 'white';
         selectedDay = day;

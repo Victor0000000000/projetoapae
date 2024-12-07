@@ -3,28 +3,30 @@
 
 
 :root {
-  /*CORES*/
-  --cor-body: #181a19;
+  /* CORES */
+  --cor-body: #ffffff; /* Fundo branco */
   --cor-light-mode: #f5f5f5;
   --cor_bot: #eac075;
   --cor-hover-bot: #f5f5f5;
-  
+  --cor-header-footer: #d9fc10; /* Azul para header e footer */
 
-  /*TEXTOS*/
-  --cor-letras-navbar: #eac075;
-  --cor_navbar: #951826;
-  --cor_texto-inicial: rgb(240, 240, 240);
-  --cor_texto: #000000;
-  --cor-letras-lightmode: rgb(15, 15, 15);
+   /* TEXTOS */
+   --cor-letras-navbar: #ffffff; /* Texto branco no header/footer */
+   --cor_texto-inicial: #000000;
+   --cor_texto: #2f17e6;
+   --cor-letras-lightmode: rgb(15, 15, 15);
 
-  /*FONTES*/
-  --font_destaque: 'Bebas Neue', sans-serif;
-  --font_texto: 'Sarabun', sans-serif; 
-  
+  /* FONTES */
+   --font_destaque: 'Bebas Neue', sans-serif;
+   --font_texto: 'Sarabun', sans-serif;
 }
 
 /*nav-bar*/
 body,
+body {
+  background-color: var(--cor-body); /* Fundo branco */
+  color: var(--cor_texto); /* Texto preto */
+}
 ul {
   margin: 0px;
   padding: 0px;
@@ -52,9 +54,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--cor_navbar);
+  background-color: var(--cor-header-footer); /* Azul */
 }
-
 #menu {
   display: flex;
   list-style: none;
@@ -62,8 +63,7 @@ ul {
 }
 
 #menu .link-menu {
-  display: block;
-  padding: 0.5rem;
+  color: var(--cor-letras-navbar); /* Texto branco */
 }
 
 #btn-mobile {
@@ -111,11 +111,10 @@ ul {
   color: var(--cor_texto-inicial);
 }
 
-body{
-  background-color: var(--cor-body);
-  color: var(--cor-light-mode);
+body {
+  background-color: var(--cor-body); /* Fundo branco */
+  color: var(--cor_texto); /* Texto preto */
 }
-
 .lightmode {
   background-color: var(--cor-light-mode);
   color: var(--cor-letras-lightmode);
@@ -213,7 +212,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--cor_navbar);
+  background: var(--cor-header-footer); /* Azul */
 }
 
 ._logo-rodape {
@@ -236,19 +235,17 @@ footer {
 }
 
 #linkrodape {
-  text-decoration: none;
-  color: var(--cor_bot);
-  font-family: 15px;
-  transition: .3s;
+  color: var(--cor-letras-navbar); /* Texto branco */
 }
+
 
 #linkrodape:hover {
   color: var(--cor-hover-bot);
 }
 
+
 .texto-rodape {
-  font-size: 17px;
-  font-family: var(--cor_texto-inicial);
+  color: var(--cor-letras-navbar); /* Texto branco */
 }
 
 /*fim footer*/
